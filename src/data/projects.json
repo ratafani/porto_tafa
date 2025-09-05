@@ -1,0 +1,206 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "StaffMate",
+            "url": "https://staffmate.com/",
+            "description": "Revolutionary mobile employee scheduling and time tracking platform that has been transforming the special events industry since 2002. StaffMate pioneered intuitive drag & drop scheduling with comprehensive time tracking capabilities, becoming an essential tool for businesses managing diverse teams. The platform offers a complete ecosystem for workforce management with robust features that streamline operations and boost productivity.",
+            "role": "Mobile Developer",
+            "category": "Workforce Management",
+            "technologies": [
+                "Swift",
+                "Kotlin",
+                "iOS",
+                "Android",
+                "REST API",
+                "Core Data",
+                "Room Database"
+            ],
+            "year": "2018",
+            "featured": true,
+            "highlights": [
+                "Industry-leading scheduling platform since 2002",
+                "Native iOS and Android applications",
+                "Comprehensive time tracking system",
+                "Offline-first architecture with sync capabilities"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Sarajevo Film Festival Mobile App",
+            "url": "https://www.sff.ba/novost/12020/new-mobile-app-of-sarajevo-film-festival-with-a-range-of-benefits-when-buying-tickets-online-",
+            "description": "Official native mobile application for the prestigious Sarajevo Film Festival, featuring seamless ticket purchasing, film scheduling, and interactive audience engagement. The app integrates secure payment processing with Mastercard partnership, offering exclusive discounts and benefits. Users can browse the complete film catalog, vote for the UniCredit Audience Award, and access real-time festival information with an intuitive, modern interface.",
+            "role": "Mobile Developer",
+            "category": "Entertainment & Events",
+            "technologies": [
+                "Swift",
+                "Kotlin",
+                "Payment Integration",
+                "Push Notifications",
+                "MapKit",
+                "Google Maps"
+            ],
+            "year": "2019",
+            "featured": true,
+            "highlights": [
+                "Official app for international film festival",
+                "Integrated Mastercard payment system with discounts",
+                "Interactive voting system for audience awards",
+                "Real-time festival schedule and location mapping"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Relia",
+            "url": "https://apps.apple.com/id/app/relia/id1488289809",
+            "description": "Innovative healthcare mobile application designed to empower cancer patients during chemotherapy treatment. Relia provides a comprehensive platform for tracking and monitoring chemotherapy side effects with medically-reliable severity indicators. The app features intuitive symptom logging, detailed analytics, shareable reports for healthcare providers, and widget support for quick access. With a 5.0-star rating, Relia has become an essential tool for patients and doctors to collaborate effectively in cancer care management.",
+            "role": "Lead Mobile Developer",
+            "category": "Healthcare & Medical",
+            "technologies": [
+                "Swift",
+                "HealthKit",
+                "Core Data",
+                "WidgetKit",
+                "CloudKit",
+                "Charts Framework"
+            ],
+            "year": "2019",
+            "featured": true,
+            "highlights": [
+                "5.0-star rating on App Store",
+                "Medically-reliable side effect tracking",
+                "iOS 14+ Widget support for quick symptom logging",
+                "Comprehensive analytics with native Charts",
+                "HIPAA-compliant data handling"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "K-chu",
+            "url": "https://www.instagram.com/kchu_id/",
+            "description": "Dynamic K-pop fan community platform that connects enthusiasts across Indonesia and beyond. K-chu creates an engaging social ecosystem where fans can discover latest K-pop content, participate in community discussions, share fan art, and stay updated with idol activities. The platform features real-time chat, event notifications, exclusive content sharing, and interactive fan engagement tools that bring the global K-pop community together.",
+            "role": "Lead Developer",
+            "category": "Social Media & Community",
+            "technologies": [
+                "Swift",
+                "Kotlin",
+                "Firebase",
+                "WebSocket",
+                "Image Processing",
+                "Push Notifications"
+            ],
+            "year": "2022",
+            "featured": false,
+            "highlights": [
+                "Thriving K-pop fan community platform",
+                "Real-time chat with WebSocket implementation",
+                "Advanced image processing for fan art sharing",
+                "Custom notification system for idol updates"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "CoppaMagz Community",
+            "url": "https://community.coppamagz.com/events",
+            "description": "Premier K-pop community events platform powered by Indonesia's leading K-pop magazine. CoppaMagz Community serves as the central hub for discovering and participating in the most current K-pop events, concerts, fan meetings, and cultural activities. The platform features comprehensive event listings, ticket integration, community forums, and exclusive content from CoppaMagz magazine, making it the go-to destination for K-pop enthusiasts seeking authentic cultural experiences.",
+            "role": "Lead Developer",
+            "category": "Events & Community",
+            "technologies": [
+                "React",
+                "Flutter",
+                "Node.js",
+                "Dart",
+                "Firebase",
+                "Payment Gateway",
+                "Calendar Integration"
+            ],
+            "year": "2024",
+            "featured": true,
+            "highlights": [
+                "Indonesia's biggest K-pop magazine platform",
+                "Cross-platform development: React web + Flutter mobile",
+                "Integrated ticketing and payment system",
+                "Real-time event updates and notifications"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Konekseed",
+            "url": "https://www.instagram.com/konekseed/",
+            "description": "Professional networking platform designed to connect entrepreneurs, startups, and business professionals seeking strategic partnerships. Konekseed facilitates meaningful business relationships through intelligent matching algorithms, comprehensive business profiles, and secure communication channels. The platform enables users to discover potential co-founders, investors, mentors, and business partners while providing tools for collaboration, project management, and deal facilitation.",
+            "role": "Mobile Developer",
+            "category": "Business & Networking",
+            "technologies": [
+                "Swift",
+                "Kotlin",
+                "Core ML",
+                "TensorFlow Lite",
+                "Biometric Authentication",
+                "Encrypted Messaging"
+            ],
+            "year": "2024",
+            "featured": false,
+            "highlights": [
+                "AI-powered business partner matching with Core ML",
+                "Biometric authentication for security",
+                "End-to-end encrypted messaging",
+                "Machine learning recommendation engine"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Komix - Potek Dance Festival",
+            "url": "https://potekdancefest.com/",
+            "description": "Comprehensive digital platform for Indonesia's premier dance festival, Potek Dance Festival. Komix manages the complete festival ecosystem including artist registrations, event scheduling, live streaming capabilities, audience engagement, and competition management. The platform supports multiple dance categories, real-time voting systems, social media integration, and provides an immersive experience for both participants and spectators of Indonesia's biggest dance celebration.",
+            "role": "Fullstack Developer",
+            "category": "Entertainment & Events",
+            "technologies": [
+                "React",
+                "Flutter",
+                "Node.js",
+                "Dart",
+                "WebRTC",
+                "Firebase",
+                "Live Streaming"
+            ],
+            "year": "2025",
+            "featured": true,
+            "highlights": [
+                "Indonesia's biggest dance event platform",
+                "Full-stack development: React web + Flutter mobile",
+                "Live streaming and real-time voting system",
+                "Cross-platform event management solution"
+            ]
+        }
+    ],
+    "categories": [
+        "Healthcare & Medical",
+        "Workforce Management",
+        "Entertainment & Events",
+        "Social Media & Community",
+        "Business & Networking"
+    ],
+    "technologies": [
+        "Swift",
+        "Kotlin",
+        "React",
+        "Flutter",
+        "Dart",
+        "Node.js",
+        "iOS",
+        "Android",
+        "Core Data",
+        "Room Database",
+        "HealthKit",
+        "WidgetKit",
+        "Core ML",
+        "TensorFlow Lite",
+        "Firebase",
+        "WebSocket",
+        "WebRTC",
+        "Payment Integration",
+        "Push Notifications",
+        "Live Streaming",
+        "Calendar Integration"
+    ]
+}

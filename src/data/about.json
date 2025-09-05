@@ -1,0 +1,469 @@
+{
+    "personalInfo": {
+        "name": "Muhammad Tafani Rabbani",
+        "title": "Senior Mobile Developer",
+        "subtitle": "iOS & Android Specialist",
+        "location": "Indonesia",
+        "email": "ratafani@gmail.com",
+        "phone": "+6282113725742",
+        "profileImages": [
+            "/src/assets/images/Tafa/tafa.png",
+            "/src/assets/images/Tafa/tafa_withbg.jpg",
+            "/src/assets/images/Tafa/tafa_witherhan.jpeg"
+        ]
+    },
+    "summary": {
+        "brief": "Passionate Senior Mobile Developer with 5+ years of experience specializing in native iOS and Android development. Expert in Swift and Kotlin with a proven track record of delivering high-quality mobile applications across healthcare, entertainment, and workforce management sectors.",
+        "highlights": [
+            "Led development of 7+ successful mobile applications",
+            "Specialized in native iOS (Swift) and Android (Kotlin) development",
+            "Experience with healthcare apps achieving 5.0-star ratings",
+            "Expertise in cross-platform development using Flutter",
+            "Strong background in API integration and offline-first architecture"
+        ]
+    },
+    "experience": [
+        {
+            "id": 1,
+            "position": "Lead Mobile Developer",
+            "company": "Healthcare Tech",
+            "duration": "2021 - Present",
+            "description": "Led the development of Relia, a healthcare app for cancer patients with 5.0-star App Store rating. Implemented HealthKit integration, Core Data management, and iOS 14+ Widget support.",
+            "technologies": [
+                "Swift",
+                "HealthKit",
+                "Core Data",
+                "WidgetKit",
+                "CloudKit"
+            ]
+        },
+        {
+            "id": 2,
+            "position": "Senior Mobile Developer",
+            "company": "Event Management Solutions",
+            "duration": "2022 - 2023",
+            "description": "Developed mobile applications for major events including Sarajevo Film Festival and workforce management platforms. Integrated payment systems and real-time features.",
+            "technologies": [
+                "Swift",
+                "Kotlin",
+                "Payment Integration",
+                "Push Notifications",
+                "MapKit"
+            ]
+        },
+        {
+            "id": 3,
+            "position": "Fullstack Mobile Developer",
+            "company": "Entertainment & Community Platforms",
+            "duration": "2020 - 2022",
+            "description": "Led development of K-pop community platforms and dance event applications. Worked on both mobile (Flutter) and web (React) implementations.",
+            "technologies": [
+                "Flutter",
+                "React",
+                "Firebase",
+                "Node.js",
+                "MongoDB"
+            ]
+        }
+    ],
+    "skills": {
+        "ios": [
+            {
+                "name": "Swift",
+                "level": 95,
+                "category": "iOS Development",
+                "experience": "5+ years"
+            },
+            {
+                "name": "SwiftUI",
+                "level": 90,
+                "category": "iOS Development",
+                "experience": "3+ years"
+            },
+            {
+                "name": "UIKit",
+                "level": 95,
+                "category": "iOS Development",
+                "experience": "5+ years"
+            },
+            {
+                "name": "CoreML",
+                "level": 85,
+                "category": "iOS Development",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Combine",
+                "level": 88,
+                "category": "iOS Development",
+                "experience": "3+ years"
+            },
+            {
+                "name": "URLSession",
+                "level": 92,
+                "category": "iOS Development",
+                "experience": "4+ years"
+            },
+            {
+                "name": "CloudKit",
+                "level": 85,
+                "category": "iOS Development",
+                "experience": "3+ years"
+            },
+            {
+                "name": "AVFoundation",
+                "level": 80,
+                "category": "iOS Development",
+                "experience": "2+ years"
+            },
+            {
+                "name": "ARKit",
+                "level": 75,
+                "category": "iOS Development",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Vision",
+                "level": 78,
+                "category": "iOS Development",
+                "experience": "2+ years"
+            },
+            {
+                "name": "SpriteKit",
+                "level": 70,
+                "category": "iOS Development",
+                "experience": "1+ years"
+            },
+            {
+                "name": "SceneKit",
+                "level": 70,
+                "category": "iOS Development",
+                "experience": "1+ years"
+            },
+            {
+                "name": "Metal",
+                "level": 65,
+                "category": "iOS Development",
+                "experience": "1+ years"
+            }
+        ],
+        "android": [
+            {
+                "name": "Kotlin",
+                "level": 90,
+                "category": "Android Development",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Java",
+                "level": 85,
+                "category": "Android Development",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Navigator Pattern",
+                "level": 88,
+                "category": "Android Development",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Jetpack Compose",
+                "level": 85,
+                "category": "Android Development",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Retrofit",
+                "level": 90,
+                "category": "Android Development",
+                "experience": "4+ years"
+            },
+            {
+                "name": "XML",
+                "level": 92,
+                "category": "Android Development",
+                "experience": "4+ years"
+            }
+        ],
+        "ml": [
+            {
+                "name": "Apple MLX",
+                "level": 80,
+                "category": "Machine Learning",
+                "experience": "1+ years"
+            },
+            {
+                "name": "PyTorch",
+                "level": 85,
+                "category": "Machine Learning",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Tensorflow",
+                "level": 82,
+                "category": "Machine Learning",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Transformer from Huggingface",
+                "level": 78,
+                "category": "Machine Learning",
+                "experience": "1+ years"
+            }
+        ],
+        "languages": [
+            {
+                "name": "C",
+                "level": 75,
+                "category": "Programming Languages",
+                "experience": "3+ years"
+            },
+            {
+                "name": "C++",
+                "level": 78,
+                "category": "Programming Languages",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Kotlin",
+                "level": 90,
+                "category": "Programming Languages",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Python",
+                "level": 85,
+                "category": "Programming Languages",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Objective-C",
+                "level": 70,
+                "category": "Programming Languages",
+                "experience": "2+ years"
+            },
+            {
+                "name": "Swift",
+                "level": 95,
+                "category": "Programming Languages",
+                "experience": "5+ years"
+            },
+            {
+                "name": "Dart",
+                "level": 80,
+                "category": "Programming Languages",
+                "experience": "2+ years"
+            }
+        ],
+        "architecture": [
+            {
+                "name": "MVVM",
+                "level": 92,
+                "category": "Architectures",
+                "experience": "4+ years"
+            },
+            {
+                "name": "VIPER",
+                "level": 85,
+                "category": "Architectures",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Clean Architecture",
+                "level": 88,
+                "category": "Architectures",
+                "experience": "3+ years"
+            }
+        ],
+        "databases": [
+            {
+                "name": "Firebase",
+                "level": 90,
+                "category": "Databases",
+                "experience": "4+ years"
+            },
+            {
+                "name": "MongoDB",
+                "level": 85,
+                "category": "Databases",
+                "experience": "3+ years"
+            },
+            {
+                "name": "SQL",
+                "level": 88,
+                "category": "Databases",
+                "experience": "4+ years"
+            }
+        ],
+        "agile": [
+            {
+                "name": "Scrum",
+                "level": 95,
+                "category": "Agile Practices",
+                "experience": "5+ years"
+            },
+            {
+                "name": "Kanban",
+                "level": 90,
+                "category": "Agile Practices",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Scrumban",
+                "level": 85,
+                "category": "Agile Practices",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Notion",
+                "level": 92,
+                "category": "Agile Tools",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Slack",
+                "level": 95,
+                "category": "Agile Tools",
+                "experience": "5+ years"
+            },
+            {
+                "name": "Trello",
+                "level": 88,
+                "category": "Agile Tools",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Discord",
+                "level": 90,
+                "category": "Agile Tools",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Jira",
+                "level": 85,
+                "category": "Agile Tools",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Miro",
+                "level": 80,
+                "category": "Agile Tools",
+                "experience": "2+ years"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Fastlane",
+                "level": 88,
+                "category": "CI/CD Tools",
+                "experience": "3+ years"
+            },
+            {
+                "name": "Git",
+                "level": 95,
+                "category": "Version Control",
+                "experience": "5+ years"
+            },
+            {
+                "name": "Xcode",
+                "level": 95,
+                "category": "IDE",
+                "experience": "5+ years"
+            },
+            {
+                "name": "Visual Studio Code",
+                "level": 90,
+                "category": "IDE",
+                "experience": "4+ years"
+            },
+            {
+                "name": "Android Studio",
+                "level": 90,
+                "category": "IDE",
+                "experience": "4+ years"
+            }
+        ]
+    },
+    "achievements": [
+        {
+            "title": "5.0-Star App Store Rating",
+            "description": "Achieved perfect rating for Relia healthcare app",
+            "year": "2021",
+            "category": "App Store Success"
+        },
+        {
+            "title": "International Festival App",
+            "description": "Developed official mobile app for Sarajevo Film Festival",
+            "year": "2023",
+            "category": "High-Profile Project"
+        },
+        {
+            "title": "Healthcare Innovation",
+            "description": "Created medically-reliable cancer patient care platform",
+            "year": "2021",
+            "category": "Healthcare Impact"
+        },
+        {
+            "title": "Cross-Platform Expertise",
+            "description": "Successfully delivered both native and cross-platform solutions",
+            "year": "2020-2023",
+            "category": "Technical Excellence"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor's Degree",
+            "institution": "International Burch University, Sarajevo",
+            "year": "2017",
+            "description": "Focused on mobile application development and software engineering"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Bachelor's Degree",
+            "issuer": "International Burch University, Sarajevo",
+            "year": "2017",
+            "type": "Education"
+        },
+        {
+            "name": "Apple Developer Academy Scholarship",
+            "issuer": "Apple Developer Academy @Binus",
+            "year": "2019",
+            "type": "Scholarship"
+        },
+        {
+            "name": "Professional Scrum Facilitation Skills",
+            "issuer": "Scrum.org",
+            "year": "2023",
+            "type": "Professional"
+        },
+        {
+            "name": "Certified Swift Trainer",
+            "issuer": "Apple",
+            "year": "2024",
+            "type": "Professional"
+        }
+    ],
+    "languages": [
+        {
+            "name": "Indonesian",
+            "level": "Native"
+        },
+        {
+            "name": "English",
+            "level": "Professional"
+        }
+    ],
+    "interests": [
+        "Mobile Technology Trends",
+        "Healthcare Innovation",
+        "Open Source Contribution",
+        "UI/UX Design",
+        "Community Building"
+    ],
+    "socialLinks": {
+        "github": "https://github.com/ratafani",
+        "linkedin": "https://www.linkedin.com/in/tafani-rabbani-b3756bb9/",
+        "email": "mailto:ratafani@gmail.com"
+    }
+}
