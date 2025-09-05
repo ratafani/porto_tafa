@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/porto_tafa/static/css/main.6a96634c.css",
+    "main.js": "/porto_tafa/static/js/main.1e87e898.js",
+    "static/js/453.3d829575.chunk.js": "/porto_tafa/static/js/453.3d829575.chunk.js",
+    "static/media/Screenshot 2025-09-05 at 17.26.05.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.26.05.628f16ee32bc5f51cbf4.png",
+    "static/media/Screenshot 2025-09-05 at 17.26.26.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.26.26.e83003d07c8ff7c10695.png",
+    "static/media/Screenshot 2025-09-05 at 17.25.44.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.25.44.a06bdf7c80460990a036.png",
+    "static/media/tafa_witherhan.jpeg": "/porto_tafa/static/media/tafa_witherhan.90ebc33d0fe8a8508812.jpeg",
+    "static/media/Screenshot 2025-09-05 at 17.06.41.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.06.41.024541108f21dcb89fcb.png",
+    "static/media/tafa.png": "/porto_tafa/static/media/tafa.242fd54c38181e31e1c5.png",
+    "static/media/Screenshot 2025-09-05 at 17.07.17.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.07.17.24d608a1e8aa7407dc41.png",
+    "static/media/Screenshot 2025-09-05 at 17.09.19.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.09.19.6312b47feeb23f9d3b2e.png",
+    "static/media/Screenshot 2025-09-05 at 17.06.51.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.06.51.447c7aadbd37f3f62a70.png",
+    "static/media/app_sff.jpg": "/porto_tafa/static/media/app_sff.58176397de4902d5058d.jpg",
+    "static/media/venue_sff.jpg": "/porto_tafa/static/media/venue_sff.d5a764d4cd8fd860b20e.jpg",
+    "static/media/tafa_withbg.jpg": "/porto_tafa/static/media/tafa_withbg.eef75306b40590e55fb7.jpg",
+    "static/media/staffmateapp.png": "/porto_tafa/static/media/staffmateapp.3cee633b3a46cc9c0bc6.png",
+    "static/media/poster_ks.webp": "/porto_tafa/static/media/poster_ks.4f8f2949a1fd9b0b388b.webp",
+    "static/media/626x0w.webp": "/porto_tafa/static/media/626x0w.82b4e81ef69deb0b27d6.webp",
+    "static/media/logo_coppa.webp": "/porto_tafa/static/media/logo_coppa.a11f7077e8313466f62f.webp",
+    "index.html": "/porto_tafa/index.html",
+    "main.6a96634c.css.map": "/porto_tafa/static/css/main.6a96634c.css.map",
+    "main.1e87e898.js.map": "/porto_tafa/static/js/main.1e87e898.js.map",
+    "453.3d829575.chunk.js.map": "/porto_tafa/static/js/453.3d829575.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a96634c.css",
+    "static/js/main.1e87e898.js"
+  ]
+}
