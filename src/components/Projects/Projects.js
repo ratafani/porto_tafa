@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Projects.css';
 import projectsData from '../../data/projects.json';
 
@@ -23,7 +23,8 @@ import komixScreen2 from '../../assets/images/Komix/Screenshot 2025-09-05 at 17.
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [expandedProject, setExpandedProject] = useState(null);
+  const expandedRef = useRef(null);
 
   // Image mapping for each project
   const projectImages = {
@@ -42,12 +43,21 @@ const Projects = () => {
     ? projectsData.projects 
     : projectsData.projects.filter(project => project.category === selectedCategory);
 
-  const openProjectModal = (project) => {
-    setSelectedProject(project);
-  };
-
-  const closeProjectModal = () => {
-    setSelectedProject(null);
+  const toggleProjectDetails = (project) => {
+    if (expandedProject?.id === project.id) {
+      setExpandedProject(null);
+    } else {
+      setExpandedProject(project);
+      // Scroll to the expanded project after a short delay for smooth animation
+      setTimeout(() => {
+        if (expandedRef.current) {
+          expandedRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      }, 300);
+    }
   };
 
   return (
@@ -71,147 +81,219 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Projects Grid - Redesigned for Better Readability */}
+        {/* Projects Grid */}
         <div className="projects-grid">
           {filteredProjects.map(project => {
             const images = projectImages[project.id];
+            const isExpanded = expandedProject?.id === project.id;
+            
             return (
               <div 
                 key={project.id} 
-                className={`project-card ${project.featured ? 'featured' : ''}`}
+                className={`project-card ${project.featured ? 'featured' : ''} ${isExpanded ? 'expanded' : ''}`}
+                ref={isExpanded ? expandedRef : null}
               >
-                {/* Clean Image Section - No Overlays */}
-                <div className="project-image-container">
-                  <img 
-                    src={images?.screenshot || images?.logo} 
-                    alt={project.title}
-                    loading="lazy"
-                    className="project-image"
-                  />
-                  <div className="project-category-badge">
-                    {project.category}
+                {/* Clickable Project Preview */}
+                <div 
+                  className="project-preview clickable-card"
+                  onClick={() => toggleProjectDetails(project)}
+                >
+                  <div className="project-image-container">
+                    <img 
+                      src={images?.screenshot || images?.logo} 
+                      alt={project.title}
+                      loading="lazy"
+                      className="project-image"
+                    />
+                    <div className="project-category-badge">
+                      {project.category}
+                    </div>
+                    <div className="project-overlay">
+                      <div className="overlay-content">
+                        <span className="tap-hint">Tap to explore</span>
+                        <div className="expand-icon">
+                          {isExpanded ? '−' : '+'}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="project-content">
+                    <div className="project-header">
+                      <h3 className="project-title">{project.title}</h3>
+                      <span className="project-year">{project.year}</span>
+                    </div>
+                    
+                    <p className="project-role">{project.role}</p>
+                    
+                    <p className="project-description">
+                      {isExpanded ? project.description : `${project.description.substring(0, 100)}...`}
+                    </p>
+                    
+                    {/* Technology Tags */}
+                    <div className="project-tech">
+                      {project.technologies.slice(0, isExpanded ? project.technologies.length : 3).map((tech, index) => (
+                        <span key={index} className="tech-tag">{tech}</span>
+                      ))}
+                      {!isExpanded && project.technologies.length > 3 && (
+                        <span className="tech-more">+{project.technologies.length - 3} more</span>
+                      )}
+                    </div>
+                    
+                    {/* External Links - Prevent event bubbling */}
+                    <div className="project-actions" onClick={(e) => e.stopPropagation()}>
+                      {project.links?.demo && (
+                        <a 
+                          href={project.links.demo} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="demo-btn"
+                        >
+                          <span className="btn-icon">🚀</span>
+                          Live Demo
+                        </a>
+                      )}
+                      {project.links?.github && (
+                        <a 
+                          href={project.links.github} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="github-btn"
+                        >
+                          <span className="btn-icon">📱</span>
+                          App Store
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
-                
-                {/* Clear Content Section - No Text on Images */}
-                <div className="project-content">
-                  <div className="project-header">
-                    <h3 className="project-title">{project.title}</h3>
-                    <span className="project-year">{project.year}</span>
+
+                {/* Expanded Details - Same as before */}
+                {isExpanded && (
+                  <div className="project-details">
+                    <div className="details-container">
+                      {/* Left Column - Visual Content */}
+                      <div className="details-left">
+                        {/* Image Gallery */}
+                        {images && Object.values(images).length > 1 && (
+                          <div className="project-gallery">
+                            <h4 className="section-title">
+                              <span className="title-icon">🖼️</span>
+                              Gallery
+                            </h4>
+                            <div className="gallery-grid">
+                              {Object.entries(images).map(([key, src]) => (
+                                <div key={key} className="gallery-item">
+                                  <img 
+                                    src={src} 
+                                    alt={`${project.title} ${key}`}
+                                    className="gallery-image"
+                                  />
+                                  <div className="gallery-overlay">
+                                    <span className="gallery-label">{key}</span>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Project Links */}
+                        {project.links && (
+                          <div className="project-links">
+                            <h4 className="section-title">
+                              <span className="title-icon">🔗</span>
+                              Links
+                            </h4>
+                            <div className="links-container">
+                              {project.links.demo && (
+                                <a 
+                                  href={project.links.demo} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="project-link demo-link"
+                                >
+                                  <span className="link-icon">🚀</span>
+                                  <span>Live Demo</span>
+                                  <span className="link-arrow">→</span>
+                                </a>
+                              )}
+                              {project.links.github && (
+                                <a 
+                                  href={project.links.github} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="project-link github-link"
+                                >
+                                  <span className="link-icon">📱</span>
+                                  <span>App Store</span>
+                                  <span className="link-arrow">→</span>
+                                </a>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Right Column - Content */}
+                      <div className="details-right">
+                        {/* Project Meta Info */}
+                        <div className="project-meta">
+                          <div className="meta-item">
+                            <span className="meta-label">Year</span>
+                            <span className="meta-value">{project.year}</span>
+                          </div>
+                          <div className="meta-item">
+                            <span className="meta-label">Role</span>
+                            <span className="meta-value">{project.role}</span>
+                          </div>
+                          <div className="meta-item">
+                            <span className="meta-label">Category</span>
+                            <span className="meta-value">{project.category}</span>
+                          </div>
+                        </div>
+
+                        {/* Project Highlights */}
+                        {project.highlights && project.highlights.length > 0 && (
+                          <div className="project-highlights">
+                            <h4 className="section-title">
+                              <span className="title-icon">✨</span>
+                              Key Features
+                            </h4>
+                            <div className="highlights-list">
+                              {project.highlights.map((highlight, index) => (
+                                <div key={index} className="highlight-item">
+                                  <div className="highlight-bullet"></div>
+                                  <span className="highlight-text">{highlight}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Technologies */}
+                        <div className="project-technologies">
+                          <h4 className="section-title">
+                            <span className="title-icon">🛠️</span>
+                            Technologies
+                          </h4>
+                          <div className="tech-stack">
+                            {project.technologies.map((tech, index) => (
+                              <div key={index} className="tech-item">
+                                <span className="tech-name">{tech}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <p className="project-role">{project.role}</p>
-                  
-                  <p className="project-description">
-                    {project.description.substring(0, 100)}...
-                  </p>
-                  
-                  {/* Technology Tags */}
-                  <div className="project-tech">
-                    {project.technologies.slice(0, 3).map(tech => (
-                      <span key={tech} className="tech-tag">{tech}</span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="tech-more">+{project.technologies.length - 3}</span>
-                    )}
-                  </div>
-                  
-                  {/* Action Buttons */}
-                  <div className="project-actions">
-                    <button 
-                      className="view-details-btn"
-                      onClick={() => openProjectModal(project)}
-                    >
-                      View Details
-                    </button>
-                    {project.url && (
-                      <a 
-                        href={project.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="visit-project-btn"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Visit ↗
-                      </a>
-                    )}
-                  </div>
-                </div>
+                )}
               </div>
             );
           })}
         </div>
       </div>
-
-      {/* Redesigned Modal - Clean & Organized */}
-      {selectedProject && (
-        <div className="project-modal-overlay" onClick={closeProjectModal}>
-          <div className="project-modal" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <button className="modal-close" onClick={closeProjectModal}>
-                ×
-              </button>
-              <h2 className="modal-title">{selectedProject.title}</h2>
-            </div>
-            
-            <div className="modal-content">
-              {/* Image Gallery */}
-              <div className="modal-image-section">
-                <img 
-                  src={projectImages[selectedProject.id]?.screenshot || projectImages[selectedProject.id]?.logo} 
-                  alt={selectedProject.title}
-                  className="modal-main-image"
-                />
-              </div>
-              
-              {/* Project Info */}
-              <div className="modal-info-section">
-                <div className="modal-meta">
-                  <span className="modal-role">{selectedProject.role}</span>
-                  <span className="modal-category">{selectedProject.category}</span>
-                  <span className="modal-year">{selectedProject.year}</span>
-                </div>
-                
-                <div className="modal-description">
-                  <h4>About This Project</h4>
-                  <p>{selectedProject.description}</p>
-                </div>
-                
-                <div className="modal-highlights">
-                  <h4>Key Achievements</h4>
-                  <ul className="highlights-list">
-                    {selectedProject.highlights.map((highlight, index) => (
-                      <li key={index}>{highlight}</li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div className="modal-technologies">
-                  <h4>Technologies Used</h4>
-                  <div className="tech-grid">
-                    {selectedProject.technologies.map(tech => (
-                      <span key={tech} className="tech-badge">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-                
-                {selectedProject.url && (
-                  <div className="modal-actions">
-                    <a 
-                      href={selectedProject.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="modal-visit-btn"
-                    >
-                      Visit Project ↗
-                    </a>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
