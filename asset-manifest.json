@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/porto_tafa/static/css/main.6a96634c.css",
-    "main.js": "/porto_tafa/static/js/main.a87ed0ca.js",
+    "main.css": "/porto_tafa/static/css/main.ea5e9ac4.css",
+    "main.js": "/porto_tafa/static/js/main.37e6b326.js",
     "static/js/453.3d829575.chunk.js": "/porto_tafa/static/js/453.3d829575.chunk.js",
     "static/media/Screenshot 2025-09-05 at 17.26.05.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.26.05.628f16ee32bc5f51cbf4.png",
     "static/media/Screenshot 2025-09-05 at 17.26.26.png": "/porto_tafa/static/media/Screenshot 2025-09-05 at 17.26.26.e83003d07c8ff7c10695.png",
@@ -20,12 +20,12 @@
     "static/media/626x0w.webp": "/porto_tafa/static/media/626x0w.82b4e81ef69deb0b27d6.webp",
     "static/media/logo_coppa.webp": "/porto_tafa/static/media/logo_coppa.a11f7077e8313466f62f.webp",
     "index.html": "/porto_tafa/index.html",
-    "main.6a96634c.css.map": "/porto_tafa/static/css/main.6a96634c.css.map",
-    "main.a87ed0ca.js.map": "/porto_tafa/static/js/main.a87ed0ca.js.map",
+    "main.ea5e9ac4.css.map": "/porto_tafa/static/css/main.ea5e9ac4.css.map",
+    "main.37e6b326.js.map": "/porto_tafa/static/js/main.37e6b326.js.map",
     "453.3d829575.chunk.js.map": "/porto_tafa/static/js/453.3d829575.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a96634c.css",
-    "static/js/main.a87ed0ca.js"
+    "static/css/main.ea5e9ac4.css",
+    "static/js/main.37e6b326.js"
   ]
 }
